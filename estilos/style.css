@@ -3,7 +3,7 @@
 /*
     Paleta de cores:
     tom de azul ao passar o mouse: #6099A6
-    tom de azul botão: #346773
+    tom de azul botão: #3f7c89
     tom de azul botão ao clicar: #243B40
     tom próximo ao branco: #D9D0C7
 */
@@ -16,7 +16,7 @@
 }
 
 body, html {
-    background-color: #346773;
+    background-color: #3f7c89;
     height: 100vh;
     width: 100vw;
 }
@@ -39,6 +39,9 @@ section#login {
     height: 500px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
@@ -50,5 +53,5 @@ section#login > div#imagem {
 
 section#login > div#formulario{
     display: block;
-    padding: 12px;
+    padding: 14px;
 }
