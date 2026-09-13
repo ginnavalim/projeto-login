@@ -2,10 +2,12 @@
 
 /*
     Paleta de cores:
-    tom de azul ao passar o mouse: #6099A6
-    tom de azul botão: #3f7c89
-    tom de azul botão ao clicar: #243B40
-    tom próximo ao branco: #D9D0C7
+    fundo da página: #3f7c89
+    fundo dos campos do formulário: #eae0d7
+    botão (normal): #22464f
+    botão (hover): #2c5c68
+    botão (clique/active): #1a353c
+    texto do link "esqueci a senha": #575757
 */
 
 * {
@@ -36,7 +38,7 @@ section#login {
 
     background-color: white;
     width: 270px;
-    height: 500px;
+    height: 515px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
@@ -62,5 +64,58 @@ div#formulario > h1 {
 }
 
 div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: #eae0d7;
+    display: block;
+    width: 100%;
+    height: 44px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 44px;
+    color: white;
+    background-color: #22464f;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #2c5c68;
+}
+
+form > input[type=submit]:active {
+    background-color: #1a353c;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 44px;
+    margin-top: 5px;
+    padding-top: 7px;
+    color: #575757;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    text-decoration: underline;
+}
+
+form > a.botao > i {
     font-size: 0.8em;
 }
