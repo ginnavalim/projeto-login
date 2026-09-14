@@ -95,7 +95,7 @@ div.campo > input {
     border: none;
     border-radius: 8px;
     padding: 4px;
-    transform: translateY(-9.5px); /*animações sempre na última liha do seletor*/
+    transform: translateY(-10px); /*animações sempre na última liha do seletor*/
 }
 
 div.campo > input:focus-within {
